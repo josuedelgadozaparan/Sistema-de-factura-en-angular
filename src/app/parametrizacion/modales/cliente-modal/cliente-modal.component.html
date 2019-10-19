@@ -1,0 +1,99 @@
+<div class="content">
+        <div class="modal-header TituloModal modal-head  justify-content-center" >
+          {{title}}</div>
+          <form [formGroup]="usuarioForm" (ngSubmit)="onSubmit()">
+          <div class="modal-body">
+        
+        
+          <div class="row">  
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+      
+          <label >Usuario</label>
+          <input type="text" formControlName="usuario"  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.usuario.errors }"  placeholder="usuario " >
+          <div *ngIf="submitted && f.usuario.errors" class="invalid-feedback">
+            <div *ngIf="f.usuario.errors.required">usuario es requerido</div>
+            <div *ngIf="f.usuario.errors.usuario">El correo electrónico debe ser una dirección de correo electrónico válida</div>
+          </div>
+      
+          <label >Contarseña</label>
+          <input type="password" required="" formControlName="password"  class="form-control input-sm SombFact"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" maxlength="50" placeholder="Digite contraseña"/>
+          <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">Contraseña es requerida</div>
+            <div *ngIf="f.password.errors.password">La contraseña debe ser valida.</div>
+        </div>
+      
+        <label >Nombre(s)</label>
+        <input type="text" required="" formControlName="nombre" placeholder="Digite nombre"   [ngClass]="{ 'is-invalid': submitted && f.nombre.errors }" class="form-control input-sm SombFact" maxlength="50"  />
+        <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+          <div *ngIf="f.nombre.errors.required">Nombre(s) es requerido</div>
+          <div *ngIf="f.nombre.errors.nombre">El nombre debe ser  válido</div>
+      </div>
+      
+        <label >Apellidos</label>
+        <input type="text"  required=""  formControlName="apellidos" class="form-control input-sm SombFact"  [ngClass]="{ 'is-invalid': submitted && f.apellidos.errors }" maxlength="50" placeholder="Digite sus apellidos" />
+        <div *ngIf="submitted && f.apellidos.errors" class="invalid-feedback">
+          <div *ngIf="f.apellidos.errors.required">Apellidos es requeridos</div>
+          <div *ngIf="f.apellidos.errors.apellidos">Los apellidos deben ser  válidos</div>
+      </div>
+        <label >Direccion</label>
+        <input type="text" required="" formControlName="direccion"  class="form-control input-sm SombFact"  [ngClass]="{ 'is-invalid': submitted && f.direccion.errors }" maxlength="50" placeholder="Digite direccion"  />
+        <div *ngIf="submitted && f.direccion.errors" class="invalid-feedback">
+          <div *ngIf="f.direccion.errors.required">La direccion es requerida</div>
+          <div *ngIf="f.direccion.errors.direccion">La direccion deben ser  válidos</div>
+      </div>-
+      
+          
+          
+      
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 ">
+            <label>Tipo de doc</label>
+            <select  formControlName="TipoDocuemento" class="form-control input-sm" [ngClass]="{ 'is-invalid': submitted && f.TipoDocuemento.errors }">
+                    <option select>Seleccione una opcion...</option>
+                    <option>CC</option>
+                    <option>T.I</option>
+            </select>
+            <div *ngIf="submitted && f.TipoDocuemento.errors" class="invalid-feedback">
+                <div *ngIf="f.TipoDocuemento.errors.required">Tipo de docuemento  es requerido</div>
+                <div *ngIf="f.TipoDocuemento.errors.TipoDocuemento">Debe selccionar el tipo de documento</div>
+            </div>
+      
+            <label>Documento</label>
+            <input type="text" required="" formControlName="documento"  class="form-control input-sm SombFact"  [ngClass]="{ 'is-invalid': submitted && f.documento.errors }" maxlength="50" placeholder="Digite documento"  />
+          <div *ngIf="submitted && f.documento.errors" class="invalid-feedback">
+          <div *ngIf="f.documento.errors.required">Documento es requerido</div>
+          <div *ngIf="f.documento.errors.documento">El documento debe ser valido</div>
+          </div>
+            <label >Telefono</label>
+            <input type="text" required="" formControlName="telefono" class="form-control input-sm SombFact "   [ngClass]="{ 'is-invalid': submitted && f.telefono.errors }"maxlength="50" placeholder="Digite telefono" />
+            <div *ngIf="submitted && f.telefono.errors" class="invalid-feedback">
+              <div *ngIf="f.telefono.errors.required">Telefono es requerido</div>
+              <div *ngIf="f.telefono.errors.telefono">El telefono debe ser valido</div>
+          </div>
+            <label >Correo</label>
+            <input type="text" required="" formControlName="email"  class="form-control input-sm SombFact"  [ngClass]="{ 'is-invalid': submitted && f.email.errors }" maxlength="50" placeholder="Digite correo"  />
+            <label >Estado</label>
+            <input type="text" value="1" readonly="readonly" placeholder="Estado" class="form-control input-sm SombFact" maxlength="50"  name="Estado"/>
+           
+      
+          </div>
+      
+            
+         
+      
+            </div>
+           
+      
+          
+         
+      
+        </div>
+      
+        <div class="modal-footer justify-content-center">
+            <button class="btn btn-danger botGuradar somb"  (click)="activeModal.close('Close click')"><b>Cancelar</b></button>
+            <button  type="submit" class="btn bot somb"> <b>{{title2}}</b></button>
+        </div>
+      
+      </form>
+         
+        </div>

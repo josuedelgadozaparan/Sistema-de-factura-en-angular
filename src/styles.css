@@ -1,1 +1,176 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  background-color: #EBE7D5;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+
+
+.TituloPanel{
+
+  font: bold 130% sans-serif !important;
+  text-align: center !important;
+
+}
+
+
+.TituloModal{
+
+  font: bold 130% sans-serif !important;
+  text-align: center !important;
+
+}
+.SombFact{
+  -webkit-box-shadow: 0px 6px 7px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 7px -9px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 7px -9px rgba(0,0,0,0.75);
+}
+
+.fod{
+  -webkit-box-shadow: 0px 18px 74px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 18px 74px -12px rgba(0,0,0,0.75);
+box-shadow: 0px 18px 74px -12px rgba(0,0,0,0.75);
+
+
+  }
+
+  .fond{
+   -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    }
+.borderedondotable{
+ border-radius:8px;
+
+}
+.bot{
+  color: #fff;
+  background-color: #1D8D95;
+  border-color: #1D8D95;
+  display: inline-block;
+  padding: 3px 17px;
+  padding: 3px 17px;
+
+}
+.bordered{
+  border-radius: 45px !important;
+}
+
+.tabl{
+  color: #fff;
+  background-color: #1D8D95;
+  border-color: #1D8D95;
+
+}
+
+.BotonRegresar{
+  color: #fff;
+  background-color: #D5463C;
+  border-color: #D5463C;
+display: inline-block;
+  padding: 3px 17px;
+  padding: 3px 17px;
+  margin-left: 9px;
+
+}
+.botGuradar{
+  padding: 3px 17px;
+
+  padding: 3px 17px;
+
+}
+
+.BotonTabla{
+
+
+    display: inline-block;
+    padding: 3px 17px;
+    margin: 0;
+
+    font-size: 12px;
+      font-weight: normal;
+      line-height: 1.42857143;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      -ms-touch-action: manipulation;
+          touch-action: manipulation;
+      cursor: pointer;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      background-image: none;
+      border: 0px solid transparent;
+      border-radius: 15px;
+
+      color: #fff;
+      background-color: #d9534f;
+      border-color: #d43f3a;
+
+
+
+
+}
+.BotonTablaEditar{
+
+
+  display: inline-block;
+    padding: 3px 17px;
+     margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-image: none;
+    border: 0px solid transparent;
+    border-radius: 15px;
+
+    color: #fff;
+    background-color: #1D8D95;
+    border-color: #1D8D95;
+
+
+
+
+}
+
+    .modal-head {
+      padding:10px;
+      border-bottom: 2px solid #e5e5e5;
+      text-align: center !important;
+
+      padding: 11px;
+
+      color: #fff;
+      text-align: center !important;
+
+      background-color: #1D8D95;
+
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+
+
+    }
+
+    .somb{
+      -webkit-box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px -1px rgba(0,0,0,0.75);
+
+    }
+
+

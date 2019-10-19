@@ -1,0 +1,54 @@
+<div class="container">
+<br>
+<div class="row">
+
+    <div class="col-md-4 col-lg-4 col-md-4 col-lg-4">
+      </div>
+
+      <div class="col-xs-4 col-ms-4 col-md-4 col-lg-4">
+
+
+
+  <div class="card">
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+      <div class="card-header modal-head">
+       <h4 class="pane-title"><b>INICIAR SESIÓN</b></h4>
+      </div>
+      <div class="well-g">
+  <div class="card-body text-center">
+  <div class="my-2">
+      <img src="assets/img/login.png">
+  </div>
+  <div class="my-2">
+  <input type="text" formControlName="email" placeholder="Usuario" class="form-control inp input-sm"
+   [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+   <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+      <div *ngIf="f.user.errors.required">Email is required</div>
+      <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+  </div>
+  </div>
+  <div class="my-2">
+  <input type="text" formControlName="password" placeholder="Contraseña" class="form-control inp input-sm"
+  [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+  <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+      <div *ngIf="f.password.errors.required">Email is required</div>
+      <div *ngIf="f.password.errors.password">Email must be a valid email address</div>
+  </div>
+  </div>
+  <div class="my-2">
+  <button type="submit" class="form-control btnLogin fond" ><span class="font-weight-bold">INGRESAR</span></button>
+  </div>
+  </div>
+</div>
+  </form>
+  </div>
+
+
+
+ </div>
+  <div class="col-md-4 col-lg-4 col-md-4 col-lg-4">
+  </div>
+
+  </div>
+</div>

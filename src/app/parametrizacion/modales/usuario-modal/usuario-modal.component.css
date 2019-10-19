@@ -1,0 +1,29 @@
+content{
+  width: 120%;
+  border: 0px;
+}
+
+label{
+  font: bold 95% sans-serif !important;
+  padding-top: 5px;
+  color: #78866E;
+}
+
+.modal-footer{
+  padding: 10px;
+  background-color:#F0EFEF;
+}
+
+body {
+  margin: 0;
+  background-color: #EBE7D5;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+
+
+
+

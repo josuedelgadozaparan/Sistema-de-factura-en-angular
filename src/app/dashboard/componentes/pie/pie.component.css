@@ -1,0 +1,14 @@
+.footer{
+
+  -webkit-box-shadow: 3px 4px 36px -12px rgba(0,0,0,0.79);
+  -moz-box-shadow: 3px 4px 36px -12px rgba(0,0,0,0.79);
+  box-shadow: 3px 4px 36px -12px rgba(0,0,0,0.79);
+ }
+
+ footer {
+  background-color:#125266 !important;
+  height: 50%;
+  color: #C5CDCD !important;
+  padding: 15px;
+
+}
