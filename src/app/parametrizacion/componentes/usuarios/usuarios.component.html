@@ -24,7 +24,7 @@
                     <th scope="col" class="text-center">Nombre</th>
                     <th scope="col" class="text-center">Apellido</th>
                     <th scope="col" class="text-center">Documento</th>
-                    <th scope="col" class="text-center">Email</th>                  
+                    <th scope="col" class="text-center">Email</th>
                     <th scope="col" class="text-center">Editar</th>
                     <th scope="col" class="text-center">Eliminar</th>
                   </tr>
@@ -38,19 +38,21 @@
                     <td scope="col" class="text-center">{{usu.ApellidoUsuario}}</td>
                     <td scope="col" class="text-center">{{usu.DocumentoUsuario}}</td>
                     <td scope="col" class="text-center">{{usu.EmailUsuario}}</td>
-                    <td class="text-center"><button type="button" (click)="open2()" class="btn somb BotonTablaEditar"><b>Editar</b></button></td>
-                    <td class="text-center"><button type="button" class="btn BotonTabla somb"><b>Eliminar</b></button></td>
+                    <td class="text-center"><button type="button" (click)="open2(usu.IdUsuario)" class="btn somb BotonTablaEditar"><b>Editar</b></button></td>
+                    <td class="text-center"><button type="button" (click)="baja(usu.IdUsuario)" class="btn BotonTabla somb"><b>Eliminar</b></button></td>
 
                   </tr>
                   </tbody>
+                  
                 </table>
-                           <pagination-controls  previousLabel="Anterior"
-                           nextLabel="Siguiente"  maxSize="5"  screenReaderCurrentLabel="You're on page" (pageChange)="p = $event" ></pagination-controls>
+                <pagination-controls  previousLabel="Anterior"
+                nextLabel="Siguiente"  maxSize="5"  screenReaderCurrentLabel="You're on page" (pageChange)="p = $event" ></pagination-controls>
 
+                  
           </div>
           <div class="card-footer text-muted ">
 
-            </div>
+          </div>
         </div>
 
 

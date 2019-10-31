@@ -49,6 +49,7 @@ export class LoginComponent implements OnInit {
     this.LoginServices.login(this.registerForm.controls['email'.toString()].value ).subscribe( response => {
     if (response['resultado']=='OK') {
          this.router.navigate(['/dashboard/inicio/inicio']);
+         alert(response.valueOf)
          swal ( '¡ Acceso permitido! ' , '¡ Bienvenido a SystemSoftware! ' , 'success' )   ;
       }else{
         alert('No se encuentra registrado')
