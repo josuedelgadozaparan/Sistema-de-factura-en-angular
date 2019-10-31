@@ -2,6 +2,11 @@ content{
   width: 120%;
   border: 0px;
 }
+.fa, .fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  margin-right: 8px;
+}
 
 label{
   font: bold 95% sans-serif !important;

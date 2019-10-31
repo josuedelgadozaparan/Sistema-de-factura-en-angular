@@ -147,6 +147,68 @@ display: inline-block;
 
 }
 
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #e9ecef !important;
+  font-weight: bold !important;
+  
+
+}
+
+input{
+  font: bold 103.2% monospace !important;
+  text-align: center !important;
+  font-size: 14px !important;
+}
+
+tbody {
+  font: bold 103.2% monospace !important;
+  font-size: 14px !important;
+  color: #454647;
+  border: 10px !important;
+}
+
+.table-sm th, .table-sm td {
+  padding: 0.2rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.17rem;
+}
+ 
+
+.f{
+  
+  margin-left: 26px !important;
+}
+
+
+.dropdown-menu.show {
+  display: block !important;
+  
+  background-color: #17a2b8 !important;
+  margin-top: 7.5px !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #212529 !important;
+}
+
+.ngx-pagination a, .ngx-pagination button {
+  color: #646567 !important;
+  font-weight: bold !important;
+}
+.ngx-pagination .current {
+ 
+  background: #2c9eaf !important;
+
+}
+
+.ngx-pagination {
+  margin-left: 350px !important;
+  margin-bottom: 1rem !important;
+}
+
     .modal-head {
       padding:10px;
       border-bottom: 2px solid #e5e5e5;

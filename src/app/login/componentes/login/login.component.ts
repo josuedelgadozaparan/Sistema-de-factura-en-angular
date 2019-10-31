@@ -1,6 +1,6 @@
 import { ServiceService } from './../../services/service.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { User } from '../models/login';
 import { Router } from '@angular/router';
 import swal from 'sweetalert';
@@ -18,6 +18,9 @@ export class LoginComponent implements OnInit {
 
   json: any;
   user: User;
+
+  
+  @Input() public Data = new User();
 
 
   constructor(private formBuilder: FormBuilder,private router: Router,private LoginServices: ServiceService) { }
@@ -47,9 +50,12 @@ export class LoginComponent implements OnInit {
     swal ( '¡ Acceso permitido! ' , '¡ Bienvenido a SystemSoftware! ' , 'success' )   ;*/
 
     this.LoginServices.login(this.registerForm.controls['email'.toString()].value ).subscribe( response => {
-    if (response['resultado']=='OK') {
+      
+      if (response['resultado']=='OK') {
+
+      
          this.router.navigate(['/dashboard/inicio/inicio']);
-         alert(response.valueOf)
+         
          swal ( '¡ Acceso permitido! ' , '¡ Bienvenido a SystemSoftware! ' , 'success' )   ;
       }else{
         alert('No se encuentra registrado')

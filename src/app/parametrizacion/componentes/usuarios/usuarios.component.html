@@ -7,15 +7,16 @@
   <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 ">
       <br>
       <div class="card fod">
-          <div class="card-header TituloPanel modal-head">
-            Administracion de usuarios
+          <div class="card-header TituloPanel modal-head"><i class="fab fa-accusoft"></i>
+            Administracion de usuarios              
           </div>
           <div class="card-body">
 
-              <button type="button" (click)="open()" class="btn bot somb"><b>Agregar nuevo <span class="oi oi-align-center"></span></b></button>
-              <a class="btn btn-danger BotonRegresar somb" [routerLink]="['/dashboard/inicio/inicio']" role="button"><b>Regresar</b></a>
+              <button type="button" (click)="open()" class="btn bot somb"><b> Agregar nuevo  </b><i class="fas fa-plus"></i></button>
+              <a class="btn btn-danger BotonRegresar somb" [routerLink]="['/dashboard/inicio/inicio']" role="button"><b>Regresar  </b> <i class="fas fa-reply-all"></i></a>
               <br><br>
-              <table class="table table-bordered table-hover table-sm table-striped bordered" >
+              <div class="table-responsive " id="tablauser">
+              <table class="table table-bordered table-hover table-sm table-striped" >
                   <thead class="tabl">
                   <tr>
                     <th scope="col" class="text-center">#</th>
@@ -30,7 +31,7 @@
                   </tr>
                   </thead>
                   <tbody>
-                  <tr *ngFor="let usu of usuarios | paginate: { itemsPerPage: 5, currentPage: p }">
+                  <tr *ngFor="let usu of usuarios | paginate: { itemsPerPage: 7, currentPage: p }">
                     <td scope="col" class="text-center">{{usu.IdUsuario}}</td>
                     <td scope="col" class="text-center">{{usu.LoginUsuario}}</td>
                     <td scope="col" class="text-center">{{usu.PasswordUsuario}}</td>
@@ -38,13 +39,14 @@
                     <td scope="col" class="text-center">{{usu.ApellidoUsuario}}</td>
                     <td scope="col" class="text-center">{{usu.DocumentoUsuario}}</td>
                     <td scope="col" class="text-center">{{usu.EmailUsuario}}</td>
-                    <td class="text-center"><button type="button" (click)="open2(usu.IdUsuario)" class="btn somb BotonTablaEditar"><b>Editar</b></button></td>
-                    <td class="text-center"><button type="button" (click)="baja(usu.IdUsuario)" class="btn BotonTabla somb"><b>Eliminar</b></button></td>
+                    <td class="text-center"><button type="button" (click)="open2(usu.IdUsuario)" class="btn somb BotonTablaEditar"><b><i class="fas fa-user-edit"></i></b></button></td>
+                    <td class="text-center"><button type="button" (click)="baja(usu.IdUsuario)" class="btn BotonTabla somb"><i class="far fa-trash-alt"></i></button></td>
 
                   </tr>
                   </tbody>
                   
                 </table>
+              </div>
                 <pagination-controls  previousLabel="Anterior"
                 nextLabel="Siguiente"  maxSize="5"  screenReaderCurrentLabel="You're on page" (pageChange)="p = $event" ></pagination-controls>
 
