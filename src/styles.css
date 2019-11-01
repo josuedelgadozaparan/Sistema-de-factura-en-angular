@@ -30,9 +30,9 @@ box-shadow: 0px 6px 7px -9px rgba(0,0,0,0.75);
 }
 
 .fod{
-  -webkit-box-shadow: 0px 18px 74px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 18px 74px -12px rgba(0,0,0,0.75);
-box-shadow: 0px 18px 74px -12px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 20px 35px -3px rgba(117,113,117,1);
+  -moz-box-shadow: -1px 20px 35px -3px rgba(117,113,117,1);
+  box-shadow: -1px 20px 35px -3px rgba(117,113,117,1);
 
 
   }
@@ -66,6 +66,29 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 
 }
 
+.fa-facebook-square:before {
+  font-size: 45px !important;
+  padding-right: 10px !important;
+}
+
+.fa-youtube:before {
+  font-size: 50px !important;
+  padding-right: 10px !important;
+}
+
+.fa-twitter-square:before {
+  font-size: 45px !important;
+  padding-right: 10px !important;
+}
+.fa-instagram:before {
+  font-size: 45px !important;
+  padding-right: 10px !important;
+}
+.fa-telegram-plane:before {
+  font-size: 45px !important;
+  padding-right: 10px !important;
+}
+
 .BotonRegresar{
   color: #fff;
   background-color: #D5463C;
@@ -74,6 +97,7 @@ display: inline-block;
   padding: 3px 17px;
   padding: 3px 17px;
   margin-left: 9px;
+  
 
 }
 .botGuradar{
@@ -175,11 +199,39 @@ tbody {
   flex: 1 1 auto;
   padding: 1.17rem;
 }
+
+.dropdown-menu.show {
+  display: block !important;
+  background-color: #17a2b8 !important;
+  margin-top: 7.5px !important;
+  padding-top: 0.8px !important;
+  padding-bottom: 1px !important;
+}
+
+.dropdown-divider {
+  height: 0;
+  margin: 0.01rem 0;
+  overflow: hidden;
+  border-top: 1px solid #e9ecef;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
  
 
 .f{
   
-  margin-left: 26px !important;
+  margin-left: 45px !important;
 }
 
 
@@ -187,7 +239,15 @@ tbody {
   display: block !important;
   
   background-color: #17a2b8 !important;
-  margin-top: 7.5px !important;
+  margin-top: 4px !important;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -208,13 +268,19 @@ tbody {
   margin-left: 350px !important;
   margin-bottom: 1rem !important;
 }
+.sombraNav{
+  -webkit-box-shadow: 0px 10px 27px -17px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 27px -17px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 27px -17px rgba(0,0,0,0.75);
 
+  
+}
     .modal-head {
       padding:10px;
       border-bottom: 2px solid #e5e5e5;
       text-align: center !important;
 
-      padding: 11px;
+      padding: 9px;
 
       color: #fff;
       text-align: center !important;
