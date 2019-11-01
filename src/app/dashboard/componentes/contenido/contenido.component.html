@@ -4,9 +4,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav mr-auto list-unstyled components" >
          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-user-circle"></i> Roles
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -24,9 +24,9 @@
             </a>
 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/producto']">Productos</a>
+              <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/producto']">Productos <i class="fas fa-cubes f"></i></a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/proveedor']">Proveedores</a>
+              <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/proveedor']">Proveedores <i class="fab fa-product-hunt icoprovee"></i></a>
             
             </div>
           </li>
@@ -35,7 +35,7 @@
                   <i class="fas fa-file-alt"></i> Facturacion 
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/factura']">Facturas</a>
+                <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/factura']">Facturas <i class="fas fa-file-invoice-dollar f"></i></a>
                
 
               </div>
@@ -45,7 +45,7 @@
                     <i class="fas fa-info-circle"></i> Informe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/reporte']">Reporte</a>
+                  <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/reporte']">Reporte <i class="fas fa-file-invoice f"></i></a>
                  
                 </div>
               </li>
@@ -54,7 +54,7 @@
                       <i class="fas fa-question-circle"></i> Ayuda
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/nosotros']">Nosotros</a>
+                    <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/nosotros']">Nosotros <i class="fas fa-book f"></i></a>
                    
                   </div>
                 </li>

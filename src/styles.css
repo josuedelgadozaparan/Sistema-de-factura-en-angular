@@ -88,6 +88,18 @@ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
   font-size: 45px !important;
   padding-right: 10px !important;
 }
+.dropdown-toggle::after {
+  top: auto;
+  bottom: 10px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+a[data-toggle="collapse"] {
+  position: relative;
+}
 
 .BotonRegresar{
   color: #fff;
@@ -232,6 +244,11 @@ tbody {
 .f{
   
   margin-left: 45px !important;
+}
+
+.icoprovee{
+  
+  margin-left: 30px !important;
 }
 
 
