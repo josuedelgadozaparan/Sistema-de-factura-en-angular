@@ -16,4 +16,8 @@ export class ServiceService {
     return this.http.get(`${this.url}logueo.php?email=${email}`);
   }
 
+  ValidarLogueo(user:String) {
+    return this.http.get(`${this.url}ValidarLogueo.php?usuario=${user}`);
+  }
+
 }

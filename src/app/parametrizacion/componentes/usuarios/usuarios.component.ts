@@ -55,10 +55,10 @@ export class UsuariosComponent implements OnInit {
     const modalRef = this.modalService.open(UsuarioModalComponent);
     //console.log(this.UsuarioServices.seleccionar(id).subscribe(result =>  modalRef.componentInstance.modalData = result[0]))
     modalRef.componentInstance.title = 'Actualizar usuario';
-    modalRef.componentInstance.title2 = 'Actualizar';    
+    modalRef.componentInstance.title2 = 'Actualizar';
     this.UsuarioServices.seleccionar(id).subscribe( response4 => {
       modalRef.componentInstance.modalData = response4;
-      console.log(response4)
+      console.log(response4);
     });
 
   }

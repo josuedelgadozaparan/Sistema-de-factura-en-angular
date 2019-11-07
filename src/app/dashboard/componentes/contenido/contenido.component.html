@@ -1,72 +1,72 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-info sombraNav">
-    <a class="navbar-brand" [routerLink]="['/dashboard/inicio/inicio']"><b>SystemSoftware</b></a>
+    <a class="navbar-brand" [routerLink]="['/dashboard/inicio/inicio']" title="Menú principal de SystemFacture"><b>SystemSoftware</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto list-unstyled components" >
          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" title="Funcion asignada" data-toggle="collapse" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-user-circle"></i> Roles
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            
-            <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/usuarios']">Usuaros <i class="fas fa-users f"></i></a>
+
+            <a class="dropdown-item" title="Administracion de usuarios del sistema" [routerLink]="['/dashboard/parametrizacion/usuarios']">Usuaros <i class="fas fa-users f"></i></a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/cliente']">Clientes <i class="fas fa-user-friends f"></i></a>
-             
+            <a class="dropdown-item" title="Administracion de clientes" [routerLink]="['/dashboard/parametrizacion/cliente']">Clientes <i class="fas fa-user-friends f"></i></a>
+
 
           </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-cogs"></i> Transacciones 
+            <a class="nav-link dropdown-toggle" title="Registro en inventario" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-cogs"></i> Transacciones
             </a>
 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/producto']">Productos <i class="fas fa-cubes f"></i></a>
+              <a class="dropdown-item" title="Administracion de productos " [routerLink]="['/dashboard/parametrizacion/producto']">Productos <i class="fas fa-cubes f"></i></a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/proveedor']">Proveedores <i class="fab fa-product-hunt icoprovee"></i></a>
-            
+              <a class="dropdown-item" title="Administracion de proveedores" [routerLink]="['/dashboard/parametrizacion/proveedor']">Proveedores <i class="fab fa-product-hunt icoprovee"></i></a>
+
             </div>
           </li>
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="fas fa-file-alt"></i> Facturacion 
+              <a class="nav-link dropdown-toggle" title="Generar factura" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-file-alt"></i> Facturacion
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/factura']">Facturas <i class="fas fa-file-invoice-dollar f"></i></a>
-               
+
 
               </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" title="Generar reporte" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-info-circle"></i> Informe
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/reporte']">Reporte <i class="fas fa-file-invoice f"></i></a>
-                 
+
                 </div>
               </li>
               <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" title="Informes del programa" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-question-circle"></i> Ayuda
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" [routerLink]="['/dashboard/parametrizacion/nosotros']">Nosotros <i class="fas fa-book f"></i></a>
-                   
+
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link " [routerLink]="['/login/auth']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link " title="Cerrar la sesion actual" [routerLink]="['/login/auth']" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Cerrar sesion <i class="fas fa-sign-in-alt"></i>
-                    </a>                   
+                    </a>
                   </li>
 
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <b>Bienvenido: Josue Delgado Zaparan</b>
+        <b title="Usuario activo">Bienvenido: Josue Delgado Zaparan</b>
       </form>
     </div>
   </nav>

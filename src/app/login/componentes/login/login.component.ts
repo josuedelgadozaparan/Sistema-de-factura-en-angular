@@ -16,10 +16,10 @@ export class LoginComponent implements OnInit {
   registerForm: FormGroup;
   submitted = false;
 
-  json: any;
-  user: User;
 
-  
+  user: any;
+
+
   @Input() public Data = new User();
 
 
@@ -40,26 +40,47 @@ export class LoginComponent implements OnInit {
     // stop here if form is invalid
     if (this.registerForm.invalid) {
       return;
-    }
+    }else{
     this.user = new User();
     this.user = this.registerForm.value;
-    console.log(this.user);
+
 
 
    /*this.router.navigate(['/dashboard/inicio/inicio']);
     swal ( '¡ Acceso permitido! ' , '¡ Bienvenido a SystemSoftware! ' , 'success' )   ;*/
 
-    this.LoginServices.login(this.registerForm.controls['email'.toString()].value ).subscribe( response => {
-      
-      if (response['resultado']=='OK') {
+    this.LoginServices.ValidarLogueo(this.registerForm.controls['email'.toString()].value).subscribe( response2 => {
+      console.log(response2);
+      this.user =response2;
 
-      
+      if(this.user.LoginUsuario!=null){
+
+        if(this.user.PasswordUsuario==this.registerForm.controls['password'.toString()].value){
+
+          this.router.navigate(['/dashboard/inicio/inicio']);
+
+          swal ( '¡ Acceso permitido! ' , '¡ Bienvenido a SystemSoftware! ' , 'success' )   ;
+
+
+        }else{
+          swal ( '¡ Advertencia! ' , '¡ La contraseña no coincide con el usuario! ' , 'warning' );
+
+        }
+
+      }else{
+        swal ( '¡ Acceso denegado! ' , '¡ Usted no registra en la bae de datos! ' , 'error' )   ;
+      }
+
+      //alert(this.user.LoginUsuario)
+      /*if (response['resultado']=='OK') {
+
+
          this.router.navigate(['/dashboard/inicio/inicio']);
-         
+
          swal ( '¡ Acceso permitido! ' , '¡ Bienvenido a SystemSoftware! ' , 'success' )   ;
       }else{
         alert('No se encuentra registrado')
-      }
+      }*/
     }
     );
 /*
@@ -73,5 +94,6 @@ export class LoginComponent implements OnInit {
 */
 
   }
+}
 
 }
